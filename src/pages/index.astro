@@ -1,11 +1,44 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Footer from "../layouts/Footer.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <main>
+    <!-- flex flex-col-reverse sm:flex-row items-center gap-4 md:gap-24 lg:gap-32 pb-16 md:pb-0 min-h-0 sm:min-h-[90vh] -->
+    <section
+      class="w-2xl md:w-3xl lg:w-4xl mt-30 min-h-[90vh] mx-auto text-center md:text-left px-10 md:flex md:flex-row-reverse md:items-center justify-around md:pb-60"
+    >
+      <div class="flex justify-center md:justify-start md:w-1/2">
+        <img src="/amz.webp" alt="Logo de Álvaro Martínez" class="w-32 md:w-[160px] md:h-auto rounded-full shadow-2xl shadow-purple-300/5" />
+      </div>
+
+      <div class="">
+        <h1 class="text-2xl md:text-5xl font-bold mt-3">
+          Hey, soy <span class="px-3 py-2 bg-purple-400 rounded-3xl inline-block text-zinc-900">Álvaro Martínez</span>
+        </h1>
+        <h2 class="text-xl md:text-3xl mt-2 font-bold text-pretty">
+          <span class="text-purple-400">Estudiante de DAW</span> en C.E.S. Vega Media en Murcia
+        </h2>
+        <p class="mt-5 text-lg text-balance">
+          Con curiosidad constante y ganas de seguir aprendiendo, exploro frameworks como Next.js, lenguajes como Go y refuerzo mis conocimientos a
+          bajo nivel con C, entre otros.
+        </p>
+        <ul class="flex gap-15 md:gap-30 mt-10 text-lg justify-center md:justify-start duration-300 ease-out">
+          <li>
+            <a href="/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </li>
+
+          <li>
+            <a href="/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </li>
+
+          <li>
+            <a href="/" target="_blank" rel="noopener noreferrer">Email</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <Footer />
 </Layout>
