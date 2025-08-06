@@ -1,13 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Footer from "../layouts/Footer.astro";
+import LinkedInIcon from "../components/icons/LinkedInIcon.astro";
+import GithubIcon from "../components/icons/GithubIcon.astro";
+import EmailIcon from "../components/icons/EmailIcon.astro";
+import Social from "../components/Social.astro";
+import CodeIcon from "../components/icons/CodeIcon.astro";
+import Github2icon from "../components/icons/Github2icon.astro";
+import PreviewIcon from "../components/icons/PreviewIcon.astro";
 ---
 
 <Layout>
   <main>
-    <!-- flex flex-col-reverse sm:flex-row items-center gap-4 md:gap-24 lg:gap-32 pb-16 md:pb-0 min-h-0 sm:min-h-[90vh] -->
     <section
-      class="w-2xl md:w-3xl lg:w-4xl mt-30 min-h-[90vh] mx-auto text-center md:text-left px-10 md:flex md:flex-row-reverse md:items-center justify-around md:pb-60"
+      class="w-full md:w-3xl lg:w-4xl mt-15 lg:mt-0 min-h-[90vh] mx-auto text-left px-10 md:flex md:flex-row-reverse md:items-center justify-around"
     >
       <div class="flex justify-center md:justify-start md:w-1/2">
         <img src="/amz.webp" alt="Logo de Álvaro Martínez" class="w-32 md:w-[160px] md:h-auto rounded-full shadow-2xl shadow-purple-300/5" />
@@ -24,21 +30,163 @@ import Footer from "../layouts/Footer.astro";
           Con curiosidad constante y ganas de seguir aprendiendo, exploro frameworks como Next.js, lenguajes como Go y refuerzo mis conocimientos a
           bajo nivel con C, entre otros.
         </p>
-        <ul class="flex gap-15 md:gap-30 mt-10 text-lg justify-center md:justify-start duration-300 ease-out">
+        <ul class="flex gap-5 md:gap-15 mt-10 md:text-lg md:justify-start duration-300 ease-out text-sm">
           <li>
-            <a href="/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <Social href="https://www.linkedin.com/in/alvaromartinezdev/" target="_blank" rel="noopener noreferrer">
+              <LinkedInIcon class="size-6 inline-block mr-2" />
+              LinkedIn
+            </Social>
           </li>
 
           <li>
-            <a href="/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <Social href="https://github.com/amartinezdev" target="_blank" rel="noopener noreferrer">
+              <GithubIcon class="size-6 inline-block mr-2" />
+              GitHub
+            </Social>
           </li>
 
           <li>
-            <a href="/" target="_blank" rel="noopener noreferrer">Email</a>
+            <Social href="mailto:alvaromartinezdev@gmail.com">
+              <EmailIcon class="size-6 inline-block mr-2" />
+              Email
+            </Social>
           </li>
         </ul>
       </div>
     </section>
-  </main>
-  <Footer />
-</Layout>
+
+    <section id="proyectos" data-section="proyectos" class="w-full md:w-3xl lg:w-4xl mx-auto mt-20 px-10">
+      <h2 class="text-2xl md:text-4xl font-bold mb-5 flex items-center gap-3"><CodeIcon /> Proyectos</h2>
+      <!-- primer proyecto -->
+      <div class="flex flex-col gap-y-16">
+        <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+          <div class="w-full md:w-1/2">
+            <div
+              class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50"
+            >
+              <img
+                alt="calculadora iOS"
+                class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+                loading="lazy"
+                src="/calculator.webp"
+              />
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 md:max-w-lg">
+            <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">iOS Calculadora</h3>
+            <div class="flex flex-wrap mt-2">
+              <div class="mt-2 text-gray-700 dark:text-gray-400">
+                Este proyecto es una calculadora web totalmente funcional inspirada en por la interfaz de la calculadora iOS de Apple.
+              </div>
+              <footer class="flex items-end justify-start mt-4 gap-x-4">
+                <a
+                  target="_blank"
+                  href="https://github.com/amartinezdev/iOScalculator"
+                  role="link"
+                  class="inline-flex bg-gray-100 text-gray-800 border-gray-300 items-center justify-center gap-2 px-3 py-2 space-x-2 text-base transition dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
+                  ><Github2icon />Code</a
+                >
+                <a
+                  target="_blank"
+                  href="https://amartinezdev.github.io/iOScalculator/"
+                  role="link"
+                  class="inline-flex bg-gray-100 text-gray-800 border-gray-300 items-center justify-center gap-2 px-3 py-2 space-x-2 text-base transition dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
+                >
+                  <PreviewIcon />Preview
+                </a>
+              </footer>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- segundo proyecto -->
+      <div class="flex flex-col gap-y-16 mt-10">
+        <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+          <div class="w-full md:w-1/2">
+            <div
+              class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50"
+            >
+              <img
+                alt="calculadora iOS"
+                class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+                loading="lazy"
+                src="/etch-a-sketchpng.webp"
+              />
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 md:max-w-lg">
+            <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Etch a Sketch</h3>
+            <div class="flex flex-wrap mt-2">
+              <div class="mt-2 text-gray-700 dark:text-gray-400">
+                Este proyecto es una recreación del clásico juego "Etch a Sketch", donde puedes dibujar en una pantalla utilizando un sistema de
+                píxeles.
+              </div>
+              <footer class="flex items-end justify-start mt-4 gap-x-4">
+                <a
+                  target="_blank"
+                  href="https://github.com/amartinezdev/etch-a-sketch"
+                  role="link"
+                  class="inline-flex bg-gray-100 text-gray-800 border-gray-300 items-center justify-center gap-2 px-3 py-2 space-x-2 text-base transition dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
+                  ><Github2icon />Code</a
+                >
+                <a
+                  target="_blank"
+                  href="https://amartinezdev.github.io/etch-a-sketch/"
+                  role="link"
+                  class="inline-flex bg-gray-100 text-gray-800 border-gray-300 items-center justify-center gap-2 px-3 py-2 space-x-2 text-base transition dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
+                >
+                  <PreviewIcon />Preview
+                </a>
+              </footer>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- tercer proyecto -->
+      <div class="flex flex-col gap-y-16 mt-10">
+        <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+          <div class="w-full md:w-1/2">
+            <div
+              class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50"
+            >
+              <img
+                alt="calculadora iOS"
+                class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+                loading="lazy"
+                src="/7.5.webp"
+              />
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 md:max-w-lg">
+            <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">7.5</h3>
+            <div class="flex flex-wrap mt-2">
+              <div class="mt-2 text-gray-700 dark:text-gray-400">
+                Este proyecto es una recreación del clásico juego "Siete y media" para un proyecto de 1º de DAW, donde puedes jugar con cartas y
+                tratar de alcanzar una puntuación de siete y media sin pasarte contra la máquina.
+              </div>
+              <footer class="flex items-end justify-start mt-4 gap-x-4">
+                <a
+                  target="_blank"
+                  href="https://github.com/amartinezdev/seven-half"
+                  role="link"
+                  class="inline-flex bg-gray-100 text-gray-800 border-gray-300 items-center justify-center gap-2 px-3 py-2 space-x-2 text-base transition dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
+                  ><Github2icon />Code</a
+                >
+                <a
+                  target="_blank"
+                  href="https://amartinezdev.github.io/seven-half/"
+                  role="link"
+                  class="inline-flex bg-gray-100 text-gray-800 border-gray-300 items-center justify-center gap-2 px-3 py-2 space-x-2 text-base transition dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
+                >
+                  <PreviewIcon />Preview
+                </a>
+              </footer>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main></Layout
+>
