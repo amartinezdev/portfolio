@@ -825,7 +825,19 @@ html[data-bs-theme="light"] .hero-section {
   line-height: 1.6;
   color: var(--text-muted);
   margin: 0 0 16px;
-  max-width: 56ch;
+  // 56ch dejaba las descripciones largas en cinco líneas y la tarjeta crecía
+  // bastante por debajo de la imagen; 72ch sigue dentro del rango cómodo de
+  // lectura (45–75) y aprovecha el ancho que ya hay libre a la derecha.
+  max-width: 72ch;
+
+  // Las claves de cada proyecto (encargo real, producción, tests) en un tono
+  // más fuerte que el resto del párrafo, para que se cojan de un vistazo. En
+  // tema claro --text-muted ya es negro puro y el color no puede subir más,
+  // así que ahí la diferencia la marca el peso.
+  strong {
+    color: var(--text-strong);
+    font-weight: 600;
+  }
 }
 
 .project-links {

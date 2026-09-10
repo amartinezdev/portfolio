@@ -261,6 +261,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           "Spring Boot",
           "JavaScript",
           "React",
+          "Angular",
           "Node.js",
           "Express",
           "PHP",
@@ -597,6 +598,54 @@ Desarrollador web Full Stack Junior de Murcia, graduado en DAW. Trabajo con <spa
       <div class="project-list">
         <div class="project-item reveal">
           <img
+            src="img/projects/stock3d.webp"
+            srcset="img/projects/stock3d-350.webp 350w, img/projects/stock3d.webp 700w"
+            sizes="(min-width: 768px) 260px, (min-width: 480px) 420px, 90vw"
+            class="project-image"
+            alt="Captura del panel de Stock3D, aplicación de gestión de inventario de filamento 3D desarrollada con Spring Boot y Angular"
+            width="700"
+            height="525"
+            loading="lazy" />
+          <div class="project-body">
+            <h3 class="project-title">&gt; Stock3D</h3>
+            <div class="project-tags">
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Angular</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <p class="project-desc">Aplicación full stack hecha <strong>para un cliente real</strong> que imprime en 3D: controla los rollos cerrados, el material en uso, las ventas y un histórico auditable de cada movimiento. API REST con autenticación JWT y roles, <strong>52 tests</strong> en el backend y despliegue en contenedores con Docker.</p>
+            <div class="project-links">
+              <a href="https://github.com/amartinezdev/stock3d-app" target="_blank" rel="noopener noreferrer" class="cmd-link">$ github</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item reveal">
+          <img
+            src="img/projects/mondejar-turpin.webp"
+            srcset="img/projects/mondejar-turpin-350.webp 350w, img/projects/mondejar-turpin.webp 700w"
+            sizes="(min-width: 768px) 260px, (min-width: 480px) 420px, 90vw"
+            class="project-image"
+            alt="Captura de la web del despacho de abogados Mondéjar y Turpín, desarrollada a medida con HTML, CSS, JavaScript y PHP"
+            width="700"
+            height="525"
+            loading="lazy" />
+          <div class="project-body">
+            <h3 class="project-title">&gt; Mondéjar &amp; Turpín</h3>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">PHP</span>
+              <span class="tag">SEO</span>
+            </div>
+            <p class="project-desc">Web corporativa a medida para un despacho de abogados de Murcia: <strong>proyecto real para un cliente real, hoy en producción</strong>. Desarrollada <strong>sin CMS ni plantillas</strong>, con HTML, CSS y JavaScript propios, formulario de contacto en PHP, tema claro/oscuro y SEO técnico con datos estructurados.</p>
+            <div class="project-links">
+              <a href="https://mondejaryturpin.com" target="_blank" rel="noopener noreferrer" class="cmd-link cmd-link--preview-glow">$ preview</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item reveal">
+          <img
             src="img/projects/cine.webp"
             srcset="img/projects/cine-350.webp 350w, img/projects/cine.webp 700w"
             sizes="(min-width: 768px) 260px, (min-width: 480px) 420px, 90vw"
@@ -639,30 +688,6 @@ Desarrollador web Full Stack Junior de Murcia, graduado en DAW. Trabajo con <spa
             <div class="project-links">
               <a href="https://github.com/amartinezdev/restaurante" target="_blank" rel="noopener noreferrer" class="cmd-link">$ github</a>
               <a href="https://alvaromartinez.dev/restaurante" target="_blank" rel="noopener noreferrer" class="cmd-link cmd-link--preview-glow">$ preview</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-item reveal">
-          <img
-            src="img/projects/calculator.webp"
-            srcset="img/projects/calculator-350.webp 350w, img/projects/calculator.webp 700w"
-            sizes="(min-width: 768px) 260px, (min-width: 480px) 420px, 90vw"
-            class="project-image"
-            alt="Captura de la calculadora web estilo iOS hecha con JavaScript y CSS"
-            width="700"
-            height="525"
-            loading="lazy" />
-          <div class="project-body">
-            <h3 class="project-title">&gt; Calculadora</h3>
-            <div class="project-tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">CSS</span>
-            </div>
-            <p class="project-desc">Calculadora web totalmente funcional inspirada en la interfaz de la calculadora iOS de Apple.</p>
-            <div class="project-links">
-              <a href="https://github.com/amartinezdev/iOScalculator" target="_blank" rel="noopener noreferrer" class="cmd-link">$ github</a>
-              <a href="https://amartinezdev.github.io/iOScalculator/" target="_blank" rel="noopener noreferrer" class="cmd-link cmd-link--preview-glow">$ preview</a>
             </div>
           </div>
         </div>
@@ -759,6 +784,9 @@ Desarrollador web Full Stack Junior de Murcia, graduado en DAW. Trabajo con <spa
             </a>
             <a href="https://es.react.dev/" class="skill-tile" target="_blank" rel="noopener noreferrer">
               <img src="img/icons/React-Dark.svg" alt="React" width="28" height="28" loading="lazy" /><span>React</span>
+            </a>
+            <a href="https://angular.dev/" class="skill-tile" target="_blank" rel="noopener noreferrer">
+              <img src="img/icons/Angular-Dark.svg" alt="Angular" width="28" height="28" loading="lazy" /><span>Angular</span>
             </a>
             <a href="https://tailwindcss.com/" class="skill-tile" target="_blank" rel="noopener noreferrer">
               <img src="img/icons/TailwindCSS-Dark.svg" alt="Tailwind CSS" width="28" height="28" loading="lazy" /><span>Tailwind</span>

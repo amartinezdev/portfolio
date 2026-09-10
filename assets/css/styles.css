@@ -671,7 +671,12 @@ html[data-bs-theme=light] .hero-section {
   line-height: 1.6;
   color: var(--text-muted);
   margin: 0 0 16px;
-  max-width: 56ch;
+  max-width: 72ch;
+}
+
+.project-desc strong {
+  color: var(--text-strong);
+  font-weight: 600;
 }
 
 .project-links {
