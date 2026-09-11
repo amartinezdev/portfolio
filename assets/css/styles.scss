@@ -864,6 +864,183 @@ html[data-bs-theme="light"] .hero-section {
 
 /*
 ----------------------
+      SERVICIOS
+----------------------
+*/
+// Con tres servicios, los únicos repartos que dejan todas las filas completas
+// son una columna o tres: con dos, la tercera tarjeta se queda suelta en una
+// fila para ella sola. Por eso no hay paso intermedio de dos columnas —
+// si algún día hay cuatro servicios, este es el punto a revisar.
+//
+// Tres columnas necesitan 1200px para no estrangular las tarjetas (a 768px
+// se quedaban en 216px y las etiquetas del stack caían a cuatro filas: ahí
+// era donde la sección se rompía). Por debajo va una sola columna, y entre
+// 768 y 1199px la tarjeta cambia a horizontal para llenar ese ancho.
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    gap: 24px;
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+// El envoltorio es el que lleva la clase .reveal. Antes la llevaba la propia
+// tarjeta, y como .reveal se declara mucho más abajo con la misma
+// especificidad, su "transition: opacity, transform" machacaba la de
+// .service: el borde cambiaba de golpe, sin fundido, y la elevación del
+// hover se quedaba en manos de la aparición al hacer scroll (550ms y con el
+// retardo escalonado de cada tarjeta). Separándolos, cada uno anima lo suyo.
+.service-item {
+  display: flex;
+}
+
+.service {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 24px 22px;
+  min-width: 0;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: transform 200ms $ease-out-strong, border-color $transition;
+
+  // El hover es solo el borde entero pasando a acento, igual que hacen las
+  // fichas de skills: es el gesto que la página ya usa para "esto responde".
+  // Un filete aparte encima del borde superior dejaba ese lado con 3px de
+  // grosor y los otros tres con 1px, además de dos movimientos distintos
+  // sobre la misma arista.
+  //
+  // :focus-within lo repite para quien llega con el tabulador al enlace.
+  &:focus-within {
+    border-color: var(--accent);
+  }
+
+  &:focus-within .service-cta {
+    animation: blink 1s infinite;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .service:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+  }
+
+  // Arranca al final del movimiento, como consecuencia de que la tarjeta ya
+  // se ha encendido, no como otra cosa moviéndose a la vez.
+  .service:hover .service-cta {
+    animation: blink 1s infinite 120ms;
+  }
+}
+
+// Sin movimiento: se queda el cambio de color, se van la elevación y el
+// parpadeo del cursor.
+@media (prefers-reduced-motion: reduce) {
+  .service {
+    transition: border-color $transition;
+  }
+
+  .service:hover {
+    transform: none;
+  }
+
+  .service:hover .service-cta,
+  .service:focus-within .service-cta {
+    animation: none;
+    border-right-color: var(--accent);
+  }
+}
+
+.service-index {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-faint);
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.service-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-strong);
+  line-height: 1.35;
+  margin: 0 0 12px;
+}
+
+.service-for {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text-dim);
+  margin: 0 0 18px;
+}
+
+.service-list {
+  margin-bottom: 20px;
+
+  strong {
+    color: var(--text-strong);
+    font-weight: 600;
+  }
+}
+
+// El detalle crece hasta llenar la tarjeta y el margin-top:auto de las
+// etiquetas empuja el bloque final abajo del todo, para que el enlace quede
+// a la misma altura en las tres columnas aunque los textos midan distinto.
+.service-detail {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.service-head {
+  min-width: 0;
+}
+
+.service-tags {
+  margin-top: auto;
+}
+
+// El enlace del pie ya está escrito como un prompt ("$ pedir_presupuesto"),
+// así que al activarse la tarjeta le sale el mismo cursor parpadeante que
+// lleva el hero. El borde derecho está siempre reservado en transparente
+// para que al aparecer no empuje el texto.
+.service-cta {
+  align-self: flex-start;
+  border-right: 3px solid transparent;
+  padding-right: 2px;
+}
+
+// Rango de una sola columna con ancho de sobra: la tarjeta se pone en
+// horizontal (enunciado a la izquierda, detalle a la derecha) en vez de
+// estirar un bloque estrecho a lo largo de toda la fila. Es la misma
+// solución que .project-item, que también pasa a fila a partir de 768px.
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .service {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 36px;
+    padding: 28px;
+  }
+
+  .service-head {
+    flex: 0 0 40%;
+  }
+
+  .service-for {
+    margin-bottom: 0;
+  }
+}
+
+/*
+----------------------
    CERTIFICADOS (cinta infinita)
 ----------------------
 */

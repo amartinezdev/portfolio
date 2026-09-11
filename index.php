@@ -177,7 +177,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   })(window,document,'script','dataLayer','GTM-TGNZRFLL');</script>
   <!-- End Google Tag Manager -->
   <title>Álvaro Martínez | Desarrollador Web Full Stack en Murcia</title>
-  <meta name="description" content="Álvaro Martínez, desarrollador web Full Stack Junior en Murcia. Java, Spring Boot, React, Node.js y PHP. Descubre mis proyectos, certificados y contacto." />
+  <meta name="description" content="Álvaro Martínez, desarrollador web Full Stack en Murcia. Webs y aplicaciones a medida como freelance para empresas y particulares. Proyectos y contacto." />
   <meta name="author" content="Álvaro Martínez" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://alvaromartinez.dev/" />
@@ -274,9 +274,73 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           "Docker",
           "HTML",
           "CSS",
-          "Responsive Web Design"
+          "Responsive Web Design",
+          "Desarrollo web freelance",
+          "Diseño web a medida",
+          "Mantenimiento web",
+          "SEO técnico"
         ],
         "knowsLanguage": "es",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios de desarrollo web freelance",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Diseño y desarrollo web a medida",
+                "description": "Diseño y desarrollo de webs corporativas a medida, sin CMS ni plantillas: adaptadas a móvil, con tema claro y oscuro y SEO técnico desde el primer día.",
+                "serviceType": "Diseño y desarrollo web",
+                "provider": { "@id": "https://alvaromartinez.dev/#person" },
+                "areaServed": [
+                  { "@type": "City", "name": "Murcia" },
+                  { "@type": "Country", "name": "España" }
+                ],
+                "availableChannel": {
+                  "@type": "ServiceChannel",
+                  "serviceUrl": "https://alvaromartinez.dev/#contact"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Aplicaciones web a medida",
+                "description": "Aplicaciones y paneles de gestión a medida con usuarios, roles y permisos, base de datos propia, histórico auditable y API REST documentada.",
+                "serviceType": "Desarrollo de software a medida",
+                "provider": { "@id": "https://alvaromartinez.dev/#person" },
+                "areaServed": [
+                  { "@type": "City", "name": "Murcia" },
+                  { "@type": "Country", "name": "España" }
+                ],
+                "availableChannel": {
+                  "@type": "ServiceChannel",
+                  "serviceUrl": "https://alvaromartinez.dev/#contact"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Mantenimiento y optimización web",
+                "description": "Auditoría de rendimiento, SEO y accesibilidad, corrección de errores, actualizaciones y copias de seguridad sobre webs ya existentes.",
+                "serviceType": "Mantenimiento web",
+                "provider": { "@id": "https://alvaromartinez.dev/#person" },
+                "areaServed": [
+                  { "@type": "City", "name": "Murcia" },
+                  { "@type": "Country", "name": "España" }
+                ],
+                "availableChannel": {
+                  "@type": "ServiceChannel",
+                  "serviceUrl": "https://alvaromartinez.dev/#contact"
+                }
+              }
+            }
+          ]
+        },
         "email": "mailto:alvaromartinezdev@gmail.com",
         "sameAs": [
           "https://github.com/amartinezdev",
@@ -438,6 +502,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#skills">skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#servicios">servicios</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">contacto</a>
@@ -791,9 +858,6 @@ Desarrollador web Full Stack Junior de Murcia, graduado en DAW. Trabajo con <spa
             <a href="https://tailwindcss.com/" class="skill-tile" target="_blank" rel="noopener noreferrer">
               <img src="img/icons/TailwindCSS-Dark.svg" alt="Tailwind CSS" width="28" height="28" loading="lazy" /><span>Tailwind</span>
             </a>
-            <a href="https://astro.build/" class="skill-tile" target="_blank" rel="noopener noreferrer">
-              <img src="img/icons/Astro.svg" alt="Astro" width="28" height="28" loading="lazy" /><span>Astro</span>
-            </a>
           </div>
         </div>
 
@@ -878,11 +942,95 @@ Desarrollador web Full Stack Junior de Murcia, graduado en DAW. Trabajo con <spa
     </div>
   </div>
 
+  <!--  SERVICIOS  -->
+  <div class="container" id="servicios">
+    <section class="section-py">
+      <div class="section-eyebrow reveal">
+        <span class="num">05</span>
+        <h2 class="section-title mb-0">servicios/</h2>
+      </div>
+      <p class="section-lede mb-4 reveal">Desarrollador web freelance en Murcia, disponible para proyectos en toda España. Esto es lo que puedo hacer por tu negocio.</p>
+
+      <div class="services-grid">
+        <div class="service-item reveal">
+          <article class="service">
+            <div class="service-head">
+              <span class="service-index mono" aria-hidden="true">01</span>
+              <h3 class="service-title">Diseño y desarrollo web a medida</h3>
+              <p class="service-for">Para negocios que necesitan una web propia, rápida y que se encuentre en Google.</p>
+            </div>
+            <div class="service-detail">
+              <ul class="timeline-list service-list">
+                <li>Diseño y desarrollo <strong>a medida, sin CMS ni plantillas</strong>.</li>
+                <li>Adaptada a móvil, con tema claro y oscuro.</li>
+                <li><strong>SEO técnico</strong> desde el primer día: metadatos, datos estructurados y velocidad de carga.</li>
+              </ul>
+              <div class="project-tags service-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+              </div>
+              <a href="#contact" class="cmd-link service-cta" data-asunto="Presupuesto · Web a medida">$ pedir_presupuesto</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="service-item reveal">
+          <article class="service">
+            <div class="service-head">
+              <span class="service-index mono" aria-hidden="true">02</span>
+              <h3 class="service-title">Aplicaciones web a medida</h3>
+              <p class="service-for">Para quien lleva su negocio en hojas de cálculo y necesita algo que no se descuadre.</p>
+            </div>
+            <div class="service-detail">
+              <ul class="timeline-list service-list">
+                <li>Panel de gestión con <strong>usuarios, roles y permisos</strong>.</li>
+                <li>Base de datos propia e histórico auditable de cada movimiento.</li>
+                <li><strong>API REST documentada</strong>, con tests y desplegada en tu servidor.</li>
+              </ul>
+              <div class="project-tags service-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Angular</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+              <a href="#contact" class="cmd-link service-cta" data-asunto="Presupuesto · Aplicación a medida">$ pedir_presupuesto</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="service-item reveal">
+          <article class="service">
+            <div class="service-head">
+              <span class="service-index mono" aria-hidden="true">03</span>
+              <h3 class="service-title">Mantenimiento y optimización web</h3>
+              <p class="service-for">Para webs que ya existen: si va lenta, no aparece en Google o hay algo roto.</p>
+            </div>
+            <div class="service-detail">
+              <ul class="timeline-list service-list">
+                <li>Auditoría de <strong>rendimiento, SEO y accesibilidad</strong>.</li>
+                <li>Corrección de errores y cambios sobre lo que ya tienes.</li>
+                <li>Actualizaciones, copias de seguridad e informe de cada intervención.</li>
+              </ul>
+              <div class="project-tags service-tags">
+                <span class="tag">Auditoría</span>
+                <span class="tag">SEO</span>
+                <span class="tag">Rendimiento</span>
+              </div>
+              <a href="#contact" class="cmd-link service-cta" data-asunto="Presupuesto · Mantenimiento y optimización">$ pedir_presupuesto</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+
   <!--  CONTACTO  -->
   <div class="container mb-5" id="contact">
     <section class="section-py">
       <div class="section-eyebrow reveal">
-        <span class="num">05</span>
+        <span class="num">06</span>
         <h2 class="section-title mb-0">contacto/</h2>
       </div>
       <p class="section-lede mb-4 reveal">¿Tienes un proyecto en mente? Escríbeme y te respondo lo antes posible.</p>
@@ -983,6 +1131,7 @@ Desarrollador web Full Stack Junior de Murcia, graduado en DAW. Trabajo con <spa
   <script src="assets/js/timelineProgress.js" defer></script>
   <script src="assets/js/mouseSpotlight.js" defer></script>
   <script src="assets/js/textScramble.js" defer></script>
+  <script src="assets/js/servicioAsunto.js" defer></script>
 </body>
 
 </html>
