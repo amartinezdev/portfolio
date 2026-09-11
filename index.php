@@ -190,18 +190,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <meta property="og:url" content="https://alvaromartinez.dev/" />
   <meta property="og:title" content="Álvaro Martínez | Desarrollador Web Full Stack en Murcia" />
   <meta property="og:description" content="Desarrollador web Full Stack Junior en Murcia. Java, Spring Boot, React, Node.js, PHP, MySQL. Proyectos, certificados y contacto." />
-  <meta property="og:image" content="https://alvaromartinez.dev/img/brand/og-cover.jpg" />
+  <meta property="og:image" content="https://alvaromartinez.dev/img/brand/og-terminal.png" />
+  <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Portfolio de Álvaro Martínez, desarrollador web Full Stack en Murcia" />
+  <meta property="og:image:alt" content="Terminal del portfolio de Álvaro Martínez, desarrollador web Full Stack en Murcia" />
   <meta property="og:locale" content="es_ES" />
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Álvaro Martínez | Desarrollador Web Full Stack en Murcia" />
   <meta name="twitter:description" content="Desarrollador web Full Stack Junior en Murcia. Java, Spring Boot, React, Node.js, PHP, MySQL." />
-  <meta name="twitter:image" content="https://alvaromartinez.dev/img/brand/og-cover.jpg" />
-  <meta name="twitter:image:alt" content="Portfolio de Álvaro Martínez, desarrollador web Full Stack en Murcia" />
+  <meta name="twitter:image" content="https://alvaromartinez.dev/img/brand/og-terminal.png" />
+  <meta name="twitter:image:alt" content="Terminal del portfolio de Álvaro Martínez, desarrollador web Full Stack en Murcia" />
 
   <meta name="theme-color" content="#0d0d0d" media="(prefers-color-scheme: dark)" />
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
